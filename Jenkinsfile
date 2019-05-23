@@ -7,6 +7,9 @@ pipeline {
 
   environment {
     IMAGE = "liatrio/petclinic-tomcat"
+    ORG = 'krishna-maplelabs'
+      APP_NAME = 'spring-petclinic-jenkins'
+      CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
   }
 
   stages {
